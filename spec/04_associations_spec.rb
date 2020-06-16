@@ -23,7 +23,7 @@ describe "Associations" do
       end
     end
 
-   Owner.reset_all
+  
 
     describe "#dogs" do
       it "returnsa a collection of all the dogs that belong to the owner" do
@@ -38,7 +38,7 @@ describe "Associations" do
       end
     end
     
-    Owner.all.clear
+    
     
     describe "#buy_cat" do
       it 'can buy a cat that is an instance of the Cat class' do
