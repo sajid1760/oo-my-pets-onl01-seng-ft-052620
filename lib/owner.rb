@@ -20,7 +20,8 @@ attr_reader :name, :species
   
   def self.reset_all
     @@all = []
-    
+    Cat.reset 
+    Dog.reset  
   end
   
   def cats 
