@@ -23,7 +23,7 @@ describe "Associations" do
       end
     end
 
-  
+  do Owner.reset_all end
 
     describe "#dogs" do
       it "returnsa a collection of all the dogs that belong to the owner" do
