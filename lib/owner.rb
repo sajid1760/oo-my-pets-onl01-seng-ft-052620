@@ -76,5 +76,9 @@ attr_reader :name, :species
       dog.owner = nil
     end
   end
+  
+  def list_pets
+    [self.dogs, self.cats]
+  end
 
 end
