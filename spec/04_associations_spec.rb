@@ -23,6 +23,8 @@ describe "Associations" do
       end
     end
 
+   Owner.reset_all
+
     describe "#dogs" do
       it "returnsa a collection of all the dogs that belong to the owner" do
         dog_1 = Dog.new("Fido", @owner)
