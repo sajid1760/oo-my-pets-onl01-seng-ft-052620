@@ -27,7 +27,7 @@ attr_reader :name, :species
   def cats 
     catvector = []
     Cat.all.each  do |cat| 
-      if cat.owner.name == self.name
+      if cat.owner == self
         then catvector << cat
       end
     end
@@ -37,7 +37,7 @@ attr_reader :name, :species
   def dogs 
     dogvector = []
     Dog.all.each  do |dog| 
-      if dog.owner.name == self.name
+      if dog.owner == self
         then dogvector << dog
       end
     end
