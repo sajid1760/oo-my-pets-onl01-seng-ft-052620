@@ -71,16 +71,16 @@ attr_reader :name, :species
   def sell_pets
     self.cats.each do |cat|
       cat.mood = "nervous"
-      cat.owner = "nil"
+      cat.owner = nil
     end
     self.dogs.each do |dog|
       dog.mood = "nervous"
-      dog.owner = "nil"
+      dog.owner = nil
     end
   end
   
   def list_pets
-    [self.dogs, self.cats]
+    "I have #{self.dogs.count} dog(s), and #{self.cats.count} cat(s)."
   end
 
 end
