@@ -7,7 +7,7 @@ attr_accessor :owner, :mood
   
   def initialize(name,owner)
     @name = name
-    @owner = owner
+    self.owner = owner
     @mood = "nervous"
     @species = "dog"
     @@all << self
