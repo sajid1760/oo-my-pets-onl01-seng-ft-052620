@@ -55,6 +55,7 @@ attr_reader :name, :species
   end
   
   def walk_dogs
-    self.dogs.each 
+    self.dogs.each_with_index do |dog|
+      
 
 end
