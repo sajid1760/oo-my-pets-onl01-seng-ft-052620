@@ -17,4 +17,8 @@ attr_accessor :owner, :mood
     @@all
   end
 
+  def self.reset 
+    @@all = []
+  end
+
 end
