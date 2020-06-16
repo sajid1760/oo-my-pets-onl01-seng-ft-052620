@@ -46,4 +46,7 @@ attr_reader :name, :species
     "I am a human."
   end
 
+  def buy_cat(name)
+    
+
 end
