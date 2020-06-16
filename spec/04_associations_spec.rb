@@ -38,7 +38,7 @@ describe "Associations" do
       end
     end
     
-    Owner.reset_all
+    Owner.all.clear
     
     describe "#buy_cat" do
       it 'can buy a cat that is an instance of the Cat class' do
